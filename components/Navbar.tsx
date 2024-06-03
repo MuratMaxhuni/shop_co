@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import SearchIcon from "./icons/SearchIcon";
 import MailIcon from "./icons/MailIcon";
+import Arrow_Down from "./icons/Arrow_Down";
 
 const Navbar = () => {
   const [close, setClose] = useState(false);
@@ -76,7 +77,7 @@ const Navbar = () => {
                       width={11.5}
                       height={6.5}
                     />
-                    <MailIcon />
+                    <Arrow_Down />
                   </div>
                 </Link>
               ))}
