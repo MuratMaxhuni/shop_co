@@ -66,15 +66,14 @@ const Navbar = () => {
                     {item.label}
                   </span>
 
-                  {item.rightIcon && (
-                    <Image
-                      // src={item.rightIcon ? item.rightIcon : ''}
-                      src="/images/down_arrow.svg"
-                      alt="arrow down"
-                      width={11.5}
-                      height={6.5}
-                    />
-                  )}
+                  {/* {item.rightIcon && ( */}
+                  <Image
+                    // src={item.rightIcon ? item.rightIcon : ''}
+                    src="/images/down_arrow.svg"
+                    alt="arrow down"
+                    width={11.5}
+                    height={6.5}
+                  />
                 </Link>
               ))}
             </div>
