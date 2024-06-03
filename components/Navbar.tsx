@@ -65,10 +65,11 @@ const Navbar = () => {
                   <span className="text-black text-base 2xl:text-lg font-normal font-satoshi">
                     {item.label}
                   </span>
+
                   {item.rightIcon && (
                     <Image
                       // src={item.rightIcon ? item.rightIcon : ''}
-                      src="images/down_arrow.svg"
+                      src="/images/down_arrow.svg"
                       alt="arrow down"
                       width={11.5}
                       height={6.5}
