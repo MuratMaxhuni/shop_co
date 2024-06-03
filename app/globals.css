@@ -63,7 +63,7 @@
 
 //////////////////
 .container {
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,7 +184,7 @@
   pointer-events: none; */
   display: inline-block;
   appearance: none;
-  background-image: url('/images/Down_arrow.svg');
+  background-image: url("/images/Down_arrow.svg");
   background-repeat: no-repeat;
   background-position: 100% 60%;
   width: 115px;
@@ -249,7 +249,7 @@
 }
 
 .close-button:after {
-  content: 'x';
+  content: "x";
   color: black;
 }
 
@@ -286,4 +286,3 @@
     width: 80%;
   }
 }
-
