@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { menuItems } from '@/constants';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
-import SearchIcon from './icons/SearchIcon';
+import { menuItems } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import SearchIcon from "./icons/SearchIcon";
 
 const Navbar = () => {
   const [close, setClose] = useState(false);
@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* banner advertiser */}
         <div
           className={`${
-            close ? 'hidden' : ''
+            close ? "hidden" : ""
           } bg-black font-satoshi px-4 xl:px-[6.25rem] 2xl:px-[6.25vw] flex flex-row py-[.56vw]`}
         >
           <div className="relative flex flex-row justify-center items-center w-full">
@@ -67,7 +67,8 @@ const Navbar = () => {
                   </span>
                   {item.rightIcon && (
                     <Image
-                      src={item.rightIcon ? item.rightIcon : ''}
+                      // src={item.rightIcon ? item.rightIcon : ''}
+                      src="images/right_icon.svg"
                       alt="arrow down"
                       width={11.5}
                       height={6.5}
