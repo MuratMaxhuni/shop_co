@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import { StarIcon } from '.';
+import Image from "next/image";
+import { StarIcon } from ".";
 
-const array = new Array(5).fill('star', 0);
+const array = new Array(5).fill("star", 0);
 
 interface Props {
   item: CardType;
@@ -22,14 +22,14 @@ const Card = ({ item }: Props) => {
   return (
     <div
       className={`p-6 border boder-black/10 rounded-[20px] w-[91.8vw] md:w-[89.8vw] ${
-        card_type === 'review' ? ' md:max-w-[45vw] xl:max-w-[40.7vw]' : ''
+        card_type === "review" ? " md:max-w-[45vw] xl:max-w-[40.7vw]" : ""
       } flex-shrink-0 relative h-[224px] md:h-full`}
     >
       <div
         className={` ${
-          card_type === 'review'
-            ? 'md:max-w-[37.9vw] xl:max-w-[37.92vw]'
-            : 'max-w-[310px] xl:max-w-[336px]'
+          card_type === "review"
+            ? "md:max-w-[37.9vw] xl:max-w-[37.92vw]"
+            : "max-w-[310px] xl:max-w-[336px]"
         }`}
       >
         <div className="flex flex-row justify-between items-center">
@@ -43,7 +43,7 @@ const Card = ({ item }: Props) => {
               </div>
             ))}
           </div>
-          {card_type === 'review' && (
+          {card_type === "review" && (
             <div className="hidden lg:block">
               <Image
                 src="/images/three_dots_icon.svg"
