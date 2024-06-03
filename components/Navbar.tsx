@@ -62,14 +62,14 @@ const Navbar = () => {
                 <Link
                   href={item.route}
                   key={item.label}
-                  className="flex flex-row space-x-1"
+                  className="flex flex-row items-center space-x-1"
                 >
                   <span className="text-black text-base 2xl:text-lg font-normal font-satoshi">
                     {item.label}
                   </span>
 
                   {item.rightIcon && (
-                    <div className="relative">
+                    <div>
                       {/* <Image
                       // src={item.rightIcon ? item.rightIcon : ''}
                       src="/images/down_arrow.svg"
